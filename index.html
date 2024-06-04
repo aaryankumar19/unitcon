@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+
+<div class="content">
+    <select id="fun_units">
+        <option value="length" selected>Length</option>
+        <option value="mass">Mass</option>
+        <option value="time">Time</option>
+        <option value="volume">Volume</option>
+        <option value="temprature">Temprature</option>
+        <option value="speed">Speed</option>
+        <option value="area">Area</option>
+        <option value="current">Current</option>
+        <option value="frequency">Frequency</option>
+        <option value="angle">Angle</option>
+        <option value="voltage">Voltage</option>
+        <option value="resistance">Resistance</option>
+        <option value="force">Force</option>
+        <option value="pressure">Pressure</option>
+
+    </select>
+    <br>
+
+    <div class="flexs">
+
+    <div class="left-panel">
+    <input type="number" id="in_value" class="input-output" placeholder="Input here" >
+    <div id="output" class="input-output">0</div>
+    </div>
+
+<!-- For length-->
+
+<div id="main-body">
+    <div id="len" >
+        <span id="input_div">
+            <select name="lin_unit" id="lin_unit" class = "option-unit" required>
+                <option value="kilometer">Kilometer</option>
+                <option value="meter" selected>Meter</option>
+                <option value="decimeter">Decimeter</option>
+                <option value="centimeter">Centimeter</option>
+                <option value="millimeter">Millimeter</option>
+                <option value="nanometer">Nanometer</option>
+                <option value="micrometer">Micrometer</option>
+                <option value="picometer">Picometer</option>
+                <option value="mile">Mile</option>
+                <option value="foot">Foot</option>
+                <option value="inch">Inch</option>
+            </select>
+            </span>
+            <br>
+
+        <span id="output_div">
+            <select name="lout_unit" id="lout_unit" class = "option-unit" required>
+                <option value="kilometer">Kilometer</option>
+                <option value="meter">Meter</option>
+                <option value="decimeter">Decimeter</option>
+                <option value="centimeter" selected>Centimeter</option>
+                <option value="millimeter">Millimeter</option>
+                <option value="nanometer">Nanometer</option>
+                <option value="micrometer">Micrometer</option>
+                <option value="picometer">Picometer</option>
+                <option value="mile">Mile</option>
+                <option value="foot">Foot</option>
+                <option value="inch">Inch</option>
+            </select>
+        </span>
+    </div>
+
+
+<!--For mass-->
+
+    <div class="options" id="mass">
+        <span id="input_div">
+            <select name="in_unit" id="in_unit" class = "option-unit" required>
+                <option value="kilogram">Kilogram(kg)</option>
+                <option value="gram" selected>Gram(g)</option>
+                <option value="milligram">Milligram(mg)</option>
+                <option value="microgram">Microgram(µg)</option>
+                <option value="quintal">Quintal(q)</option>
+                <option value="pound">Pound(lb)</option>
+                <option value="ounce">Ounce(oz)</option>
+                <option value="carat">Carat(ct)</option>
+                <option value="tonne">Tonne(t)</option>
+            </select>
+        </span><br>
+
+        <span id="output_div">
+            <select name="out_unit" id="out_unit" class = "option-unit" required>
+                <option value="kilogram">Kilogram(kg)</option>
+                <option value="gram" selected>Gram(g)</option>
+                <option value="milligram">Milligram(mg)</option>
+                <option value="microgram">Microgram(µg)</option>
+                <option value="quintal">Quintal(q)</option>
+                <option value="pound">Pound(lb)</option>
+                <option value="ounce">Ounce(oz)</option>
+                <option value="carat">Carat(ct)</option>
+                <option value="tonne">Tonne(t)</option>
+            </select>
+        </span>
+    </div>
+
+    <!--For time-->
+
+    <div class="options" id="time">
+        <span id="input_div">
+            <select name="tin_unit" id="tin_unit" class = "option-unit" required>
+                <option value="year">Year(Y)</option>
+                <option value="week">Week(wk)</option>
+                <option value="day">Day(d)</option>
+                <option value="hour">Hour(h)</option>
+                <option value="minute">Minute(min)</option>
+                <option value="second">Second(s)</option>
+                <option value="millisecond">Millisecond(ms)</option>
+                <option value="microsecond">Microsecond(µs)</option>
+                <option value="picosecond">Picosecond(ps)</option>
+            </select>
+        </span><br>
+
+        <span id="output_div">
+            <select name="tout_unit" id="tout_unit" class = "option-unit" required>
+                <option value="year">Year(Y)</option>
+                <option value="week">Week(wk)</option>
+                <option value="day">Day(d)</option>
+                <option value="hour">Hour(h)</option>
+                <option value="minute">Minute(min)</option>
+                <option value="second">Second(s)</option>
+                <option value="millisecond">Millisecond(ms)</option>
+                <option value="microsecond">Microsecond(µs)</option>
+                <option value="picosecond">Picosecond(ps)</option>
+            </select>
+        </span>
+    </div>
+
+<!--For volume-->
+
+    <div class="options" id="volume">
+        <span id="input_div">
+            <select name="vin_unit" id="vin_unit" class = "option-unit" required>
+                <option value="cubic-m">Cubic meter(m<sup>3</sup>)</option>
+                <option value="cubic-dm" >Cubic decimeter(dm<sup>3</sup>)</option>
+                <option value="cubic-cm">Cubic centimeter(cm<sup>3</sup>)</option>
+                <option value="cubic-mm">Cubic millimeter(mm<sup>3</sup>)</option>
+                <option value="hectoliter">Hectoliter(hl)</option>
+                <option value="liter" selected>Liter(l)</option>
+                <option value="deciliter">Deciliter(dl)</option>
+                <option value="centiliter">Centiliter(cl)</option>
+                <option value="milliliter">Milliliter(ml)</option>
+                <option value="cubic-foot">Cubic foot(ft<sup>3</sup>)</option>
+                <option value="cubic-inch">Cubic inch(in<sup>3</sup>)</option>
+                <option value="cubic-yard">Cubic yard(yd<sup>3</sup>)</option>
+                <option value="acre-foot">Acre-foot(af<sup>3</sup>)</option>
+            </select>
+        </span><br>
+
+        <span id="output_div">
+            <select name="vout_unit" id="vout_unit" class = "option-unit" required>
+                <option value="cubic-m">Cubic meter(m<sup>3</sup>)</option>
+                <option value="cubic-dm" >Cubic decimeter(dm<sup>3</sup>)</option>
+                <option value="cubic-cm">Cubic centimeter(cm<sup>3</sup>)</option>
+                <option value="cubic-mm">Cubic millimeter(mm<sup>3</sup>)</option>
+                <option value="hectoliter">Hectoliter(hl)</option>
+                <option value="liter" selected>Liter(l)</option>
+                <option value="deciliter">Deciliter(dl)</option>
+                <option value="centiliter">Centiliter(cl)</option>
+                <option value="milliliter">Milliliter(ml)</option>
+                <option value="cubic-foot">Cubic foot(ft<sup>3</sup>)</option>
+                <option value="cubic-inch">Cubic inch(in<sup>3</sup>)</option>
+                <option value="cubic-yard">Cubic yard(yd<sup>3</sup>)</option>
+                <option value="acre-foot">Acre-foot(af<sup>3</sup>)</option>
+            </select>
+        </span>
+    </div>
+
+<!--For temprature-->
+
+    <div class="options" id="temprature">
+        <span id="input_div">
+            <select name="tempin_unit" id="tempin_unit" class = "option-unit" required>
+                <option value="celsius">Celsius</option>
+                <option value="f">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </span><br>
+
+        <span id="output_div">
+            <select name="tempout_unit" id="tempout_unit" class = "option-unit"  required>
+                <option value="celsius">Celsius</option>
+                <option value="f">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </span>
+    </div>
+
+<!--For Speed-->
+
+<div class="options" id="speed">
+    <span id="input_div">
+        <select name="speedin_unit" id="speedin_unit" class = "option-unit" required>
+            <option value="milephour">Mile/hour</option>
+            <option value="kmphour">Kilometer/hour</option>
+            <option value="footpsec">Foot/second</option>
+            <option value="meterpsec">Meter/second</option>
+            <option value="knot">Knot</option>
+            <option value="mach">Mach</option>
+        </select>
+    </span><br>
+
+    <span id="output_div">
+        <select name="speedout_unit" id="speedout_unit" class = "option-unit" required>
+            <option value="milephour">Mile/hour</option>
+            <option value="kmphour">Kilometer/hour</option>
+            <option value="footpsec">Foot/second</option>
+            <option value="meterpsec">Meter/second</option>
+            <option value="knot">Knot</option>
+            <option value="mach">Mach</option>
+        </select>
+    </span>
+</div>
+
+<!--for area-->
+
+<div class="options" id="area">
+    <span id="input_div">
+        <select name="areain_unit" id="areain_unit" class = "option-unit" required>
+            <option value="sqkm">Sq. Kilometer</option>
+            <option value="hectare">Hectare</option>
+            <option value="are">Are</option>
+            <option value="sqm">Sq. Meter</option>
+            <option value="sqdm">Sq. Decimeter</option>
+            <option value="sqcm">Sq. Centimeter</option>
+            <option value="sqmm">Sq. Millimeter</option>
+            <option value="sqmile">Sq. Mile</option>
+            <option value="acre">Acre</option>
+            <option value="sqyard">Sq. Yard</option>
+            <option value="sqfoot">Sq. Foot</option>
+            <option value="sqinch">Sq. Inch</option>
+        </select>
+    </span><br>
+
+    <span id="output_div">
+        <select name="areaout_unit" id="areaout_unit" class = "option-unit" required>
+            <option value="sqkm">Sq. Kilometer</option>
+            <option value="hectare">Hectare</option>
+            <option value="are">Are</option>
+            <option value="sqm">Sq. Meter</option>
+            <option value="sqdm">Sq. Decimeter</option>
+            <option value="sqcm">Sq. Centimeter</option>
+            <option value="sqmile">Sq. Mile</option>
+            <option value="acre">Acre</option>
+            <option value="sqyard">Sq. Yard</option>
+            <option value="sqfoot">Sq. Foot</option>
+            <option value="sqinch">Sq. Inch</option>
+        </select>
+    </span>
+</div>
+
+<!--for current-->
+
+<div class="options" id="current">
+    <span id="input_div">
+        <select name="currentin_unit" id="currentin_unit" class = "option-unit"  required>
+            <option value="microampere">Microampere</option>
+            <option value="milliampere">Milliampere</option>
+            <option value="ampere">Ampere</option>
+            <option value="kiloampere">Kiloampere</option>
+            <option value="megaampere">Megaampere</option>
+            <option value="gigaampere">Gigaampere</option>
+            <option value="teraampere">Teraampere</option>
+            <option value="petaampere">Petaampere</option>
+            <option value="exaampere">Exaampere</option>
+        </select>
+    </span><br>
+
+    <span id="output_div">
+        <select name="currentout_unit" id="currentout_unit" class = "option-unit" required>
+            <option value="microampere">Microampere</option>
+            <option value="milliampere">Milliampere</option>
+            <option value="ampere">Ampere</option>
+            <option value="kiloampere">Kiloampere</option>
+            <option value="megaampere">Megaampere</option>
+            <option value="gigaampere">Gigaampere</option>
+            <option value="teraampere">Teraampere</option>
+            <option value="petaampere">Petaampere</option>
+            <option value="exaampere">Exaampere</option>
+        </select>
+    </span>
+</div>
+
+<!--For frequency-->
+
+<div class="options" id="freq">
+    <span id="input_div">
+        <select name="freqin_unit" id="freqin_unit" class = "option-unit" required>
+            <option value="microhertz">Microhertz</option>
+            <option value="millihertz">Millihertz</option>
+            <option value="hertz">hertz</option>
+            <option value="kilohertz">Kilohertz</option>
+            <option value="megahertz">Megahertz</option>
+            <option value="gigahertz">Gigahertz</option>
+            <option value="terahertz">Terahertz</option>
+            <option value="petahertz">Petahertz</option>
+            <option value="exahertz">Exahertz</option>
+        </select>
+    </span><br>
+
+    <span id="output_div">
+        <select name="freqout_unit" id="freqout_unit" class = "option-unit" required>
+            <option value="microhertz">Microhertz</option>
+            <option value="millihertz">Millihertz</option>
+            <option value="hertz">hertz</option>
+            <option value="kilohertz">Kilohertz</option>
+            <option value="megahertz">Megahertz</option>
+            <option value="gigahertz">Gigahertz</option>
+            <option value="terahertz">Terahertz</option>
+            <option value="petahertz">Petahertz</option>
+            <option value="exahertz">Exahertz</option>
+        </select>
+    </span>
+</div>
+
+<!--for angle-->
+
+<div class="options" id="angle">
+    <span id="input_div">
+        <select name="anglein_unit" id="anglein_unit" class = "option-unit" required>
+            <option value="degree">Degree</option>
+            <option value="radian">Radian</option>
+            <option value="milliradian">Milliradian</option>
+            <option value="microradian">Microradian</option>
+            <option value="gradian">Gradian</option>
+            <option value="revolution">Revolution</option>
+            <option value="arcminute">Arcminute</option>
+            <option value="arcsecond">Arcsecond</option>
+            <option value="milliarcsecond">Milliarcsecond</option>
+            <option value="microarcsecond">Microarcsecond</option>
+        </select>
+    </span><br>
+
+    <span id="output_div">
+        <select name="angleout_unit" id="angleout_unit" class = "option-unit" required>
+            <option value="degree">Degree</option>
+            <option value="radian">Radian</option>
+            <option value="milliradian">Milliradian</option>
+            <option value="microradian">Microradian</option>
+            <option value="gradian">Gradian</option>
+            <option value="revolution">Revolution</option>
+            <option value="arcminute">Arcminute</option>
+            <option value="arcsecond">Arcsecond</option>
+            <option value="milliarcsecond">Milliarcsecond</option>
+            <option value="microarcsecond">Microarcsecond</option>
+        </select>
+    </span>
+</div>
+
+<!--for voltage-->
+
+<div class="options" id="voltage">
+    <span id="input_div">
+        <select name="voltin_unit" id="voltin_unit" class = "option-unit" required>
+            <option value="microvolt">Microvolt</option>
+            <option value="millivolt">Millivolt</option>
+            <option value="volt">volt</option>
+            <option value="kiloherta">Kilovolt</option>
+            <option value="megavolt">Megavolt</option>
+            <option value="gigavolt">Gigavolt</option>
+            <option value="teravolt">Teravolt</option>
+            <option value="petavolt">Petavolt</option>
+            <option value="exavolt">Exavolt</option>
+        </select>
+    </span><br>
+
+    <span id="output_div">
+        <select name="voltout_unit" id="voltout_unit" class = "option-unit" required>
+            <option value="microvolt">Microvolt</option>
+            <option value="millivolt">Millivolt</option>
+            <option value="volt">volt</option>
+            <option value="kiloherta">Kilovolt</option>
+            <option value="megavolt">Megavolt</option>
+            <option value="gigavolt">Gigavolt</option>
+            <option value="teravolt">Teravolt</option>
+            <option value="petavolt">Petavolt</option>
+            <option value="exavolt">Exavolt</option>
+        </select>
+    </span>
+</div>
+
+<!--for resistance-->
+<div class="options" id="ohm">
+    <span id="input_div">
+        <select name="resistancein_unit" id="resistancein_unit" class = "option-unit" required>
+            <option value="microohm">Microohm</option>
+            <option value="milliohm">Milliohm</option>
+            <option value="ohm">ohm</option>
+            <option value="kiloohm">Kiloohm</option>
+            <option value="megaohm">Megaohm</option>
+        </select>
+    </span><br>
+
+    <span id="output_div">
+        <select name="resistanceout_unit" id="resistanceout_unit" class = "option-unit" required>
+            <option value="microohm">Microohm</option>
+            <option value="milliohm">Milliohm</option>
+            <option value="ohm">ohm</option>
+            <option value="kiloohm">Kiloohm</option>
+            <option value="megaohm">Megaohm</option>
+        </select>
+    </span>
+</div>
+
+<!--for force-->
+<div class="options" id="force">
+    <span id="input_div">
+        <select name="forcein_unit" id="forcein_unit" class = "option-unit" required>
+            <option value="newton">Newton</option>
+            <option value="dyne">Dyne</option>
+            <option value="kilogram-force">Kilogram-force</option>
+            <option value="gram-force">Gram-force</option>
+            <option value="kilonewton">Kilonewton</option>
+            <option value="kip-force">Kip-force</option>
+            <option value="metric ton-force">Metric Ton-force</option>
+            <option value="pound-force">Pound-force</option>
+            <option value="ounce-force">Ounce-force</option>
+        </select>
+    </span><br>
+
+    <span id="output_div">
+        <select name="forceout_unit" id="forceout_unit" class = "option-unit" required>
+            <option value="newton">Newton</option>
+            <option value="dyne">Dyne</option>
+            <option value="kilogram-force">Kilogram-force</option>
+            <option value="gram-force">Gram-force</option>
+            <option value="kilonewton">Kilonewton</option>
+            <option value="kip-force">Kip-force</option>
+            <option value="metric ton-force">Metric Ton-force</option>
+            <option value="pound-force">Pound-force</option>
+            <option value="ounce-force">Ounce-force</option>
+        </select>
+    </span>
+</div>
+
+<div class="options" id="pressure">
+    <span id="input_div">
+        <select name="pressurein_unit" id="pressurein_unit" class = "option-unit" required>
+            <option value="pascal">Pascal</option>
+            <option value="bar">Bar</option>
+            <option value="atmosphere">Atmosphere</option>
+            <option value="torr">Torr</option>
+            <!-- <option value="pound per square inch">Pound per square inch (psi)</option> -->
+            <option value="poundal per square foot">Poundal per square foot</option>
+            <option value="kilopascal">Kilopascal</option>
+            <option value="megapascal">Megapascal</option>
+            <option value="millibar">Millibar</option>
+            <option value="pascal (absolute)">Pascal (absolute)</option>
+            <option value="pascal (gauge)">Pascal (gauge)</option>
+            <option value="kilogram per square meter">Kilogram per square meter</option>
+            <option value="ton per square foot">Ton per square foot</option>
+            <option value="ton per square inch">Ton per square inch</option>
+        </select>
+    </span><br>
+
+    <span id="output_div">
+        <select name="pressureout_unit" id="pressureout_unit" class = "option-unit" required>
+            <option value="pascal">Pascal</option>
+            <option value="bar">Bar</option>
+            <option value="atmosphere">Atmosphere</option>
+            <option value="torr">Torr</option>
+            <!-- <option value="pound per square inch">Pound per square inch (psi)</option> -->
+            <option value="poundal per square foot">Poundal per square foot</option>
+            <option value="kilopascal">Kilopascal</option>
+            <option value="megapascal">Megapascal</option>
+            <option value="millibar">Millibar</option>
+            <option value="pascal (absolute)">Pascal (absolute)</option>
+            <option value="pascal (gauge)">Pascal (gauge)</option>
+            <option value="kilogram per square meter">Kilogram per square meter</option>
+            <option value="ton per square foot">Ton per square foot</option>
+            <option value="ton per square inch">Ton per square inch</option>
+        </select>
+    </span>
+</div>
+</div>
+</div>
+    <button id="resultBtn">Convert</button>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

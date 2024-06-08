@@ -1,4 +1,4 @@
-This is a simple Unit Converter Web Extension. This can be added to your web browser(chromw,edge,etc.).
+This is a simple Unit Converter Web Extension. This can be added to your web browser(chrome,edge,etc.).
 
 Steps to add this this Extension Pack in your Browser:
 1. Download and save the repo to your computer/laptop and the decompress it.
